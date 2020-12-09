@@ -104,4 +104,14 @@ function itemViewer(itemName) {
   info.innerText += 'Name: ' + storeData[count].name + newline;
   info.innerText += 'Price: $' + storeData[count].price + newline;
   info.innerText += 'Description: ' + storeData[count].description;
+  document.querySelector('#contactform').style.visibility = 'hidden';
+  document.querySelector('#contactitle').style.visibility = 'hidden';
+}
+
+function ProblemViewer(elem) {
+  if (elem.value === 'Order Problem') {
+    document.querySelector('#ordernumber').style.visibility = 'visible';
+  } else {
+    document.querySelector('#ordernumber').style.visibility = 'hidden';
+  }
 }

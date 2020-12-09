@@ -47,7 +47,7 @@ nav ul li ul {
 }
 
 nav ul li:hover ul {
-  position: fixed;
+  position: absolute;
   display: block;
   padding: 0;
   width: 500px;
@@ -72,7 +72,7 @@ nav li:hover {
 footer {
   background-color: rgb(255, 255, 255);
   color: #000000;
-  height: 9em;
+  height: 15em;
 }
 
 .copywrite {
@@ -148,7 +148,7 @@ footer:hover {
   border-radius: 10px;
 }
 
-button {
+#buybutton  {
   border-radius: 5px;
   padding: 1em;
   background-color: rgba(6, 184, 255, 0.646);
@@ -184,4 +184,50 @@ button {
 
 #signup {
   text-align: center;
+}
+
+.sub{
+  text-align: center;
+  padding: 2em;
+  border: 1px solid black;
+  
+}
+
+#subbutton{
+  color: rgb(188, 153, 101);
+}
+
+#contact {
+  justify-content:center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#ordernumber {
+  justify-content:center;
+  visibility: hidden;
+}
+
+#contactform {
+  margin-top: 4em;
+  padding: 7em;
+  border: 1px solid black;
+  visibility: show;
+  max-width: 50%;
+  margin: 0px;
+  visibility: show;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  align-items: center;
+  grid-gap: 15px;
+}
+
+#name {
+  visibility: hidden;
+}
+
+#contactitle {
+  text-align: center;
+  visibility: show;
 }
