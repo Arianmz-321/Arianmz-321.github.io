@@ -1,233 +1,30 @@
-/* Add any CSS you need to this file. */
-#logo {
-  border-image: 6em;
-}
-@font-face {
-  font-family: DancingScript;
-  src: url(./font/DancingScript-bold.ttf);
-}
-
 body {
-  font-family: DancingScript;
-  font-size: 18px;
+    background-image: url("./img/pexels-fwstudio-163999.jpg");
+    background-size: 100%;
 }
 
-nav {
-  background-color: rgb(255, 255, 255);
+#title {
+    text-align: center;
+    font-size: 35pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.column {
+    margin-left: 10%;
+    width: 220px;
+    height: 300px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2%;
+    border-color: black;
+    
 }
 
-nav ul li {
-  float: left;
+.row {
+   
 }
 
-nav a:link,
-nav a:visited {
-  display: block;
-  color: #000000;
-  background-color: rgb(255, 255, 255);
-  text-align: left;
-  padding: 15px;
-  text-decoration: none;
-}
-
-nav ul li ul {
-  padding: 2px 12px;
-  position: fixed;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s;
-}
-
-nav ul li:hover ul {
-  position: absolute;
-  display: block;
-  padding: 0;
-  width: 500px;
-  height: 500px;
-  opacity: 1;
-  visibility: visible;
-  cursor: pointer;
-}
-
-nav ul li ul li {
-  display: block;
-  text-align: left;
-  width: 140px;
-}
-
-nav li:hover {
-  background-color: rgb(238, 219, 191);
-  color: #000000;
-  border-style: solid;
-  border-width: 2px;
-}
-footer {
-  background-color: rgb(255, 255, 255);
-  color: #000000;
-  height: 15em;
-}
-
-.copywrite {
-  text-align: center;
-}
-.bottom a {
-  color: #000000;
-}
-header {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-footer:hover {
-  background-color: rgb(238, 219, 191);
-}
-.slidefunc {
-  display: none;
-}
-.myslides {
-  width: 800px;
-  height: 400px;
-  background-color: yellow;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  text-align: center;
-  overflow: hidden;
-  border-style: groove;
-  border-width: 40px;
-  border-color: rgb(238, 219, 191);
-}
-#popup {
-  visibility: hidden;
-  display: none;
-  position: fixed;
-  top: 25%;
-  left: 5%;
-  background-color: rgb(238, 219, 191);
-  padding: 5px;
-  border: 1px solid black;
-  cursor: default;
-  z-index: 1000;
-}
-
-#popup .image {
-  max-width: 400px;
-}
-
-#whiteLayer {
-  visibility: hidden;
-  background: rgb(255, 255, 255);
-  position: fixed;
-  top: 25%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 970;
-}
-
-#itemInfo {
-  visibility: hidden;
-  position: fixed;
-  top: 286px;
-  right: 40px;
-  width: 400px;
-  height: 100%;
-  z-index: 1001;
-  font: bold 40px DancingScript;
-  color: rgb(0, 0, 0);
-  background-color: rgba(53, 21, 21, 0);
-  padding: 40px;
-  border-radius: 10px;
-}
-
-#buybutton  {
-  border-radius: 5px;
-  padding: 1em;
-  background-color: rgba(6, 184, 255, 0.646);
-  outline: none;
-  color: rgb(0, 0, 0);
-  left: 700px;
-  top: 800px;
-  font-weight: 900;
-  font-style: 1.2em;
-  letter-spacing: 0.2em;
-  position: fixed;
-  z-index: 1004;
-  cursor: pointer;
-}
-
-#locals img {
-  border-radius: 10px;
-  padding: 3px;
-  background-color: black;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-#locals h2 {
-  text-align: center;
-}
-#local2 h2 {
-  text-align: center;
-  font: bold 50px arial;
-  color: rgb(234, 196, 138);
-}
-
-#signup {
-  text-align: center;
-}
-
-.sub{
-  text-align: right;
-  padding: 2em;
-  border: 1px solid black;
-  
-}
-
-#subbutton{
-  color: rgb(188, 153, 101);
-}
-
-#contact {
-  justify-content:center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-#ordernumber {
-  justify-content:center;
-  visibility: hidden;
-}
-
-#contactform {
-  margin-top: 4em;
-  padding: 7em;
-  border: 1px solid black;
-  visibility: show;
-  max-width: 50%;
-  margin: 0px;
-  visibility: show;
-  display: grid;
-  grid-template-columns: 2fr 5fr;
-  align-items: center;
-  grid-gap: 15px;
-}
-
-#name {
-  visibility: hidden;
-}
-
-#contactitle {
-  text-align: center;
-  visibility: show;
+p {
+    text-align: justify;
 }
